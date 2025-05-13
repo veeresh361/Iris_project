@@ -1,137 +1,72 @@
-# 🏦 Loan Status Prediction App
+# Iris Classification Project
 
-This project focuses on building and deploying a machine learning application that predicts whether a **loan application will be approved or rejected** based on applicant details such as income, credit history, employment status, etc.
-
-Built using **Streamlit**, this app provides an end-to-end solution from data analysis to model training and real-time predictions.
-
----
+This project focuses on building a machine learning model to classify the species of the Iris flower into three categories: **Setosa**, **Versicolor**, and **Virginica** based on their features (sepal length, sepal width, petal length, petal width).
 
 ## 📂 Project Structure
 
-- `app.py` — Main Streamlit application file
-- `assets/` — Optional folder for CSS or images
-- `README.md` — Project documentation (this file)
-- `requirements.txt` — List of required Python libraries
-- `models/` — Folder to save/export trained ML models (optional)
-
----
+- `data/` — Folder containing the Iris dataset (if any local file used).
+- `notebooks/` — Jupyter notebooks or Python scripts for data analysis and modeling.
+- `models/` — Saved trained models (optional).
+- `README.md` — Project documentation (this file).
 
 ## 📊 Dataset
 
-The dataset used is the **Loan Prediction Problem Dataset** from [Kaggle](https://www.kaggle.com/datasets/altruistdelhite04/loan-prediction-problem-dataset).
-
-It contains information like:
-
-- Gender
-- Married
-- Education
-- ApplicantIncome
-- LoanAmount
-- Credit_History
-- Loan_Status (Target Variable)
-
----
+The dataset used is the famous **Iris dataset**, originally introduced by **Ronald A. Fisher** in 1936.
+It contains 150 samples, with 4 features each:
+- Sepal Length
+- Sepal Width
+- Petal Length
+- Petal Width
+and a target variable:
+- Species (Setosa, Versicolor, Virginica)
 
 ## ⚙️ Technologies Used
 
-- Python 3.9+
-- Streamlit (Web UI)
-- Pandas & NumPy (Data Handling)
-- Seaborn & Matplotlib (Visualization)
-- Scikit-learn (ML & Preprocessing)
-
----
+- Python
+- Pandas
+- NumPy
+- Matplotlib / Seaborn
+- Scikit-learn (for model building)
+- Jupyter Notebook / VS Code
 
 ## 🚀 Project Workflow
 
-1. Upload or load dataset
+1. Load the dataset
 2. Perform Exploratory Data Analysis (EDA)
-    - View raw data
-    - Handle missing values
-    - Analyze categorical & numerical features
-3. Preprocess data
-    - Impute missing values
-    - Encode categorical variables
-    - Feature scaling
-4. Feature Selection
-    - Apply **Chi-Square Test** to pick top-k important features
-5. Train ML models (user-selectable)
-    - Decision Tree
-    - Random Forest
-    - SVM
-    - AdaBoost
-    - Gradient Boosting
-6. Evaluate model
-    - Accuracy
-    - Classification report
-7. Save trained model using Pickle
-8. Provide a download option for the trained `.pkl` model
-
----
+3. Preprocess the data (if needed)
+4. Split the data into training and testing sets
+5. Train different classification models (e.g., Logistic Regression, Decision Tree, KNN)
+6. Evaluate models using accuracy, confusion matrix, and classification report
+7. Select the best-performing model
 
 ## 📈 Results
 
-The model's performance may vary based on the selected features and preprocessing settings.
-Typical accuracy ranges from **75% to 85%** depending on model and tuning.
+The model achieved a high accuracy in classifying the Iris flowers.
+*(You can add your final accuracy here, e.g., "Final Accuracy: 97% on test data.")*
 
----
+## 📌 How to Run
 
-## 💻 How to Run Locally
-
-1. Clone this repository
-    ```bash
-    git clone https://github.com/yourusername/loan-status-app.git
-    cd loan-status-app
-    ```
-
-2. Install dependencies
+1. Clone this repository.
+2. Install the required libraries using:
     ```bash
     pip install -r requirements.txt
     ```
-
-3. Launch the Streamlit app
+3. Run the Jupyter Notebook or Python script:
     ```bash
-    streamlit run app.py
+    jupyter notebook iris_classification.ipynb
+    ```
+    or
+    ```bash
+    python iris_classification.py
     ```
 
----
+## ✨ Future Work
 
-## ✨ Features
-
-- Sidebar navigation for multiple sections
-- Interactive EDA with charts & value counts
-- Missing value imputation (mean, median, mode)
-- Feature scaling options (StandardScaler, MinMax, Robust)
-- Feature selection via Chi² test
-- Multiple ML model training options
-- Download trained model with one click
-
----
-
-## 🎯 Future Enhancements
-
-- Add cross-validation for better evaluation
-- Hyperparameter tuning (GridSearchCV)
-- Deploy on Streamlit Cloud with permanent link
-- Add user authentication (admin mode)
-
----
+- Deploy the model as a web application using Streamlit or Flask.
+- Experiment with advanced models like Random Forest, SVM, or XGBoost.
+- Perform hyperparameter tuning to improve performance further.
 
 ## 🤝 Acknowledgements
 
-- [Kaggle Loan Prediction Dataset](https://www.kaggle.com/datasets/altruistdelhite04/loan-prediction-problem-dataset)
-- [Streamlit Documentation](https://docs.streamlit.io/)
-- [Scikit-learn Documentation](https://scikit-learn.org/)
-
----
-
-## 👨‍💻 Author
-
-**Your Name**
-📧 your.email@example.com
-🌐 [LinkedIn](https://linkedin.com/in/your-profile)
-🐙 [GitHub](https://github.com/yourusername)
-
----
-
-⭐️ _If you found this project helpful, give it a star!_
+- The Iris dataset - [UCI Machine Learning Repository](https://archive.ics.uci.edu/ml/datasets/iris)
+- Scikit-learn Documentation
