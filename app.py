@@ -1,4 +1,5 @@
 import streamlit as st
+import os
 from sklearn.datasets import load_iris
 import pandas as pd
 from utils import scatter_plot, get_model
@@ -8,7 +9,7 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 import joblib
 import numpy as np
-from config import RESUTDICT
+from config import RESUTDICT,MODEL_SAVE_PATH
 
 
 @st.cache_data
@@ -37,7 +38,7 @@ st.markdown(
         color: #003366;
         font-size: 36px;
     }
-    
+
     h3 {
         color: #336699;
         font-size: 30px;
@@ -110,8 +111,8 @@ with tab3:
         y = iris_data["target"]
         x_train, x_test, y_train, y_test = train_test_split(x, y, random_state=42)
         selected_model.fit(x_train, y_train)
-        path = f"D:\\Projects\\Test\\models\\{make_choice}.pkl"
-        joblib.dump(selected_model, path)
+        # path = f"D:\\Projects\\Test\\models\\{make_choice}.pkl"
+        joblib.dump(selected_model, os.path.join(MODEL_SAVE_PATH,f"{make_choice}.pkl"))
         st.session_state["trained_model"] = selected_model
         y_pred = selected_model.predict(x_test)
         score = accuracy_score(y_pred, y_test)
