@@ -23,7 +23,7 @@ project/
 ├── images/ # Directory containing input images
 ├── requirements.txt # Python dependencies
 └── README.md # You're here
-
+```
 ---
 
 ## ⚙️ Technologies Used
