@@ -14,7 +14,6 @@ This application allows users to:
 
 ## 📁 Folder Structure
 project/
-│
 ├── app.py # Main Streamlit app
 ├── pca_utils.py # PCA processing utilities
 ├── plotting_utils.py # Visualization utilities
@@ -26,9 +25,29 @@ project/
 
 ---
 
-## 🧰 Requirements
+## ⚙️ Technologies Used
 
-Install Python packages required to run the app:
+- Python 3.9+
+- Streamlit (Web UI)
+- Pandas & NumPy (Data Handling)
+- Seaborn & Matplotlib (Visualization)
+- Scikit-learn (ML & Preprocessing)
 
-```bash
-pip install -r requirements.txt
+---
+
+## 💻 How to Run Locally
+
+1. Clone this repository
+    ```bash
+    git clone https://github.com/veeresh361/Iris_project.git
+    cd Project_3
+    ```
+
+2. Install dependencies
+    ```bash
+    pip install -r requirements.txt
+    ```
+
+3. Launch the Streamlit app
+    ```bash
+    streamlit run app.py

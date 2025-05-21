@@ -80,8 +80,8 @@ Typical accuracy ranges from **75% to 85%** depending on model and tuning.
 
 1. Clone this repository
     ```bash
-    git clone https://github.com/yourusername/loan-status-app.git
-    cd loan-status-app
+    git clone https://github.com/veeresh361/Iris_project.git
+    cd Project_2
     ```
 
 2. Install dependencies
