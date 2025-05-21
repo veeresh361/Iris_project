@@ -13,6 +13,7 @@ This application allows users to:
 ---
 
 ## 📁 Folder Structure
+```text
 project/
 ├── app.py # Main Streamlit app
 ├── pca_utils.py # PCA processing utilities
