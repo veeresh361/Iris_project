@@ -67,6 +67,7 @@ def run():
     scaler_option = st.radio("Choose Scaling Method", ["None", "StandardScaler", "MinMaxScaler", "RobustScaler"])
 
     if scaler_option != "None":
+        
         scaler = {
             "StandardScaler": StandardScaler(),
             "MinMaxScaler": MinMaxScaler(),
