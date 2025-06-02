@@ -22,13 +22,12 @@ The dataset used is the **Mobile Price Prediction** from [Kaggle](https://www.ka
 
 It contains information like:
 
-- N of sims
+- No of sims
 - ram size
 - wifi
 - Touch Screen 
-- LoanAmount
-- Credit_History
-- Loan_Status (Target Variable)
+- int_memory
+- mobile_price (Target Variable)
 
 ---
 
@@ -39,6 +38,7 @@ It contains information like:
 - Pandas & NumPy (Data Handling)
 - Seaborn & Matplotlib (Visualization)
 - Scikit-learn (ML & Preprocessing)
+- Pytorch
 
 ---
 
@@ -54,18 +54,14 @@ It contains information like:
     - Encode categorical variables
     - Feature scaling
 4. Feature Selection
-    - Apply **Chi-Square Test** to pick top-k important features
-5. Train ML models (user-selectable)
-    - Decision Tree
-    - Random Forest
-    - SVM
-    - AdaBoost
-    - Gradient Boosting
+    - Apply **Anova Test** to pick top-k important features
+5. Train DL models (user-selectable)
+    - ANN
 6. Evaluate model
     - Accuracy
     - Classification report
-7. Save trained model using Pickle
-8. Provide a download option for the trained `.pkl` model
+7. Save trained model using pytorch
+8. Provide a download option for the trained `.pth` model
 
 ---
 
@@ -102,8 +98,7 @@ Typical accuracy ranges from **75% to 85%** depending on model and tuning.
 - Interactive EDA with charts & value counts
 - Missing value imputation (mean, median, mode)
 - Feature scaling options (StandardScaler, MinMax, Robust)
-- Feature selection via Chi² test
-- Multiple ML model training options
+- Feature selection via Anova  test
 - Download trained model with one click
 
 ---
