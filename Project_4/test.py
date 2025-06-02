@@ -8,7 +8,7 @@ page = st.sidebar.radio("Go to", ["🏠 Home", "📊 EDA", "🧠 Feature Engenie
 
 
 if page == "🏠 Home":
-    st.title("🏦 Loan Status Prediction App")
+    st.title("🏦 Mobile Price Prediction App")
     st.markdown("#### A sleek ML-powered web app to predict loan approvals.")
 
     st.markdown("---")
