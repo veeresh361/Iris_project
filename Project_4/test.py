@@ -4,7 +4,7 @@ st.set_page_config(page_title="Loan Status Prediction", layout="wide")
 
 
 st.sidebar.title("📁 Navigation")
-page = st.sidebar.radio("Go to", ["🏠 Home", "📊 EDA", "🧠 Feature Engenieering", "🧾 Inference"])
+page = st.sidebar.radio("Go to", ["🏠 Home", "📊 EDA", "🧠 Feature Engenieering",'Training', "🧾 Inference"])
 
 
 if page == "🏠 Home":
@@ -38,3 +38,6 @@ elif page == "📊 EDA":
     EDA.run()
 elif page == "🧠 Feature Engenieering":
     FeatureEngenieering.run()
+
+elif page == "Training":
+    Train.run()
